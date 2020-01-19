@@ -15,12 +15,12 @@ generate:
     - name: go
       type: go
       flags: plugins=grpc
-      output: ./gen/go
+      output: ./go
 
     - name: php
       flags: plugins=grpc
-      output: ./gen/php
+      output: ./php
 
     - name: python
       flags: plugins=grpc
-      output: ./gen/python
+      output: ./python
