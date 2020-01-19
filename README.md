@@ -9,5 +9,5 @@
 
 ### 生成sdk
 ```bash
-prototool all
+prototool generate
 ```
