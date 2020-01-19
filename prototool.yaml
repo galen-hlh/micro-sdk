@@ -17,6 +17,11 @@ generate:
       flags: plugins=grpc
       output: ./go
 
+    - name: micro
+      type: go
+      flags: plugins=grpc
+      output: ./go
+
     - name: php
       flags: plugins=grpc
       output: ./php
