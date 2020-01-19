@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Helper {
+  rpc GetDistributeId(IdRequest) returns (IdResponse);
+}
+
+message IdRequest {
+  int32 code = 1;
+}
+
+message IdResponse {
+  int64 result = 1;
+}
