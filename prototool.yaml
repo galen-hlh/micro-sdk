@@ -1,13 +1,13 @@
 protoc:
   version: 3.8.0
-lint:
-  group: proto
-  rules:
-    remove:
-      - REQUEST_RESPONSE_NAMES_MATCH_RPC
-      - REQUEST_RESPONSE_TYPES_UNIQUE
-  file_header:
-    path: ./LICENSE
+#lint:
+#  group: proto
+#  rules:
+#    remove:
+#      - REQUEST_RESPONSE_NAMES_MATCH_RPC
+#      - REQUEST_RESPONSE_TYPES_UNIQUE
+#  file_header:
+#    path: ./LICENSE
 generate:
   go_options:
     import_path: github.com/uber/prototool/example/proto
@@ -17,13 +17,17 @@ generate:
       flags: plugins=grpc
       output: ./go
 
-    - name: micro
-      type: go
-      flags: plugins=grpc
-      output: ./go
+#    - name: micro
+#      type: go
+#      flags: plugins=grpc
+#      output: ./go
 
     - name: php
       flags: plugins=grpc
+      output: ./php
+
+    - name: grpc_php
+      path: /Users/galen/grpc/bins/opt/grpc_php_plugin
       output: ./php
 
     - name: python
