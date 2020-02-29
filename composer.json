@@ -1,0 +1,26 @@
+{
+  "name": "micro/micro-sdk",
+  "type": "library",
+  "authors": [
+    {
+      "name": "helinhan",
+      "email": "463929412@qq.com"
+    }
+  ],
+  "description": "",
+  "require": {
+    "grpc/grpc": "^1.15",
+    "ext-swoole": "1.10.2",
+    "ext-grpc": "1.16.0",
+    "ext-json": "^1.2.0",
+    "endroid/qr-code": "3.5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "MicroProto\\": "php/MicroProto/",
+      "GPBMetadata\\": "php/GPBMetadata/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

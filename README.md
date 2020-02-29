@@ -12,9 +12,6 @@ git clone -b $(curl -L https://grpc.io/release) https://github.com/grpc/grpc   g
 cd grpc
 git submodule update --init
 make grpc_php_plugin
-
-# 把生成的文件加入环境变量
-./grpc/bins/opt/grpc_php_plugin
 ```
 
 
@@ -22,5 +19,5 @@ make grpc_php_plugin
 
 ### 生成sdk
 ```bash
-prototool generate
+cd pb && prototool generate
 ```

@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option php_namespace = "MicroProto\\Helper";
+
 service Helper {
   rpc GetDistributeId(IdRequest) returns (IdResponse);
 }

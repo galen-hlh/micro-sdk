@@ -1,7 +1,7 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace ;
+namespace MicroProto\Helper;
 
 /**
  */
@@ -17,15 +17,15 @@ class HelperClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \IdRequest $argument input argument
+     * @param \MicroProto\Helper\IdRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function GetDistributeId(\IdRequest $argument,
+    public function GetDistributeId(\MicroProto\Helper\IdRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/Helper/GetDistributeId',
         $argument,
-        ['\IdResponse', 'decode'],
+        ['\MicroProto\Helper\IdResponse', 'decode'],
         $metadata, $options);
     }
 

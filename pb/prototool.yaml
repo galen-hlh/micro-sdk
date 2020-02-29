@@ -15,21 +15,21 @@ generate:
     - name: go
       type: go
       flags: plugins=grpc
-      output: ./go
+      output: ../go
 
 #    - name: micro
 #      type: go
 #      flags: plugins=grpc
-#      output: ./go
+#      output: ../go
 
     - name: php
-      flags: plugins=grpc
-      output: ./php
+#      flags: plugins=grpc
+      output: ../php
 
     - name: grpc_php
       path: /Users/galen/grpc/bins/opt/grpc_php_plugin
-      output: ./php
-
+      output: ../php
+#
     - name: python
       flags: plugins=grpc
-      output: ./python
+      output: ../python
