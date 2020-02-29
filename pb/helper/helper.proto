@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package MicroProto.Helper;
-//option php_namespace = "MicroProto\\Helper";
+package helper;
+option php_namespace = "MicroProto\\Helper";
 
 service Helper {
     rpc GetDistributeId (stream IdRequest) returns (stream IdResponse);

@@ -21,7 +21,7 @@ class HelperClient extends \Grpc\BaseStub {
      * @param array $options call options
      */
     public function GetDistributeId($metadata = [], $options = []) {
-        return $this->_bidiRequest('/MicroProto.Helper.Helper/GetDistributeId',
+        return $this->_bidiRequest('/helper.Helper/GetDistributeId',
         ['\MicroProto\Helper\IdResponse','decode'],
         $metadata, $options);
     }
