@@ -23,7 +23,7 @@ class HelperClient extends \Grpc\BaseStub {
      */
     public function GetDistributeId(\MicroProto\Helper\IdRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/Helper/GetDistributeId',
+        return $this->_simpleRequest('/MicroProto.Helper.Helper/GetDistributeId',
         $argument,
         ['\MicroProto\Helper\IdResponse', 'decode'],
         $metadata, $options);

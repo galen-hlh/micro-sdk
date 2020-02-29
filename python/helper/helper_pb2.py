@@ -17,10 +17,10 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='helper/helper.proto',
-  package='',
+  package='MicroProto.Helper',
   syntax='proto3',
-  serialized_options=_b('\312\002\021MicroProto\\Helper'),
-  serialized_pb=_b('\n\x13helper/helper.proto\"\x19\n\tIdRequest\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\"\x1c\n\nIdResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\x32\x34\n\x06Helper\x12*\n\x0fGetDistributeId\x12\n.IdRequest\x1a\x0b.IdResponseB\x14\xca\x02\x11MicroProto\\Helperb\x06proto3')
+  serialized_options=None,
+  serialized_pb=_b('\n\x13helper/helper.proto\x12\x11MicroProto.Helper\"\x19\n\tIdRequest\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\"\x1c\n\nIdResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\x32X\n\x06Helper\x12N\n\x0fGetDistributeId\x12\x1c.MicroProto.Helper.IdRequest\x1a\x1d.MicroProto.Helper.IdResponseb\x06proto3')
 )
 
 
@@ -28,13 +28,13 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _IDREQUEST = _descriptor.Descriptor(
   name='IdRequest',
-  full_name='IdRequest',
+  full_name='MicroProto.Helper.IdRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='code', full_name='IdRequest.code', index=0,
+      name='code', full_name='MicroProto.Helper.IdRequest.code', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -52,20 +52,20 @@ _IDREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=23,
-  serialized_end=48,
+  serialized_start=42,
+  serialized_end=67,
 )
 
 
 _IDRESPONSE = _descriptor.Descriptor(
   name='IdResponse',
-  full_name='IdResponse',
+  full_name='MicroProto.Helper.IdResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='result', full_name='IdResponse.result', index=0,
+      name='result', full_name='MicroProto.Helper.IdResponse.result', index=0,
       number=1, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -83,8 +83,8 @@ _IDRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=50,
-  serialized_end=78,
+  serialized_start=69,
+  serialized_end=97,
 )
 
 DESCRIPTOR.message_types_by_name['IdRequest'] = _IDREQUEST
@@ -94,32 +94,31 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 IdRequest = _reflection.GeneratedProtocolMessageType('IdRequest', (_message.Message,), {
   'DESCRIPTOR' : _IDREQUEST,
   '__module__' : 'helper.helper_pb2'
-  # @@protoc_insertion_point(class_scope:IdRequest)
+  # @@protoc_insertion_point(class_scope:MicroProto.Helper.IdRequest)
   })
 _sym_db.RegisterMessage(IdRequest)
 
 IdResponse = _reflection.GeneratedProtocolMessageType('IdResponse', (_message.Message,), {
   'DESCRIPTOR' : _IDRESPONSE,
   '__module__' : 'helper.helper_pb2'
-  # @@protoc_insertion_point(class_scope:IdResponse)
+  # @@protoc_insertion_point(class_scope:MicroProto.Helper.IdResponse)
   })
 _sym_db.RegisterMessage(IdResponse)
 
 
-DESCRIPTOR._options = None
 
 _HELPER = _descriptor.ServiceDescriptor(
   name='Helper',
-  full_name='Helper',
+  full_name='MicroProto.Helper.Helper',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=80,
-  serialized_end=132,
+  serialized_start=99,
+  serialized_end=187,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetDistributeId',
-    full_name='Helper.GetDistributeId',
+    full_name='MicroProto.Helper.Helper.GetDistributeId',
     index=0,
     containing_service=None,
     input_type=_IDREQUEST,
