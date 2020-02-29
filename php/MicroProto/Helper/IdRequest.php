@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class IdRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>int32 code = 1;</code>
+     * Generated from protobuf field <code>int32 num = 1;</code>
      */
-    private $code = 0;
+    private $num = 0;
 
     /**
      * Constructor.
@@ -24,7 +24,7 @@ class IdRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int $code
+     *     @type int $num
      * }
      */
     public function __construct($data = NULL) {
@@ -33,23 +33,23 @@ class IdRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 code = 1;</code>
+     * Generated from protobuf field <code>int32 num = 1;</code>
      * @return int
      */
-    public function getCode()
+    public function getNum()
     {
-        return $this->code;
+        return $this->num;
     }
 
     /**
-     * Generated from protobuf field <code>int32 code = 1;</code>
+     * Generated from protobuf field <code>int32 num = 1;</code>
      * @param int $var
      * @return $this
      */
-    public function setCode($var)
+    public function setNum($var)
     {
         GPBUtil::checkInt32($var);
-        $this->code = $var;
+        $this->num = $var;
 
         return $this;
     }

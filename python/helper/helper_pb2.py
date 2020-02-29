@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='MicroProto.Helper',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x13helper/helper.proto\x12\x11MicroProto.Helper\"\x19\n\tIdRequest\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\"\x1c\n\nIdResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\x32X\n\x06Helper\x12N\n\x0fGetDistributeId\x12\x1c.MicroProto.Helper.IdRequest\x1a\x1d.MicroProto.Helper.IdResponseb\x06proto3')
+  serialized_pb=_b('\n\x13helper/helper.proto\x12\x11MicroProto.Helper\"\x18\n\tIdRequest\x12\x0b\n\x03num\x18\x01 \x01(\x05\"\x1c\n\nIdResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\x32\\\n\x06Helper\x12R\n\x0fGetDistributeId\x12\x1c.MicroProto.Helper.IdRequest\x1a\x1d.MicroProto.Helper.IdResponse(\x01\x30\x01\x62\x06proto3')
 )
 
 
@@ -34,7 +34,7 @@ _IDREQUEST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='code', full_name='MicroProto.Helper.IdRequest.code', index=0,
+      name='num', full_name='MicroProto.Helper.IdRequest.num', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -53,7 +53,7 @@ _IDREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=42,
-  serialized_end=67,
+  serialized_end=66,
 )
 
 
@@ -83,8 +83,8 @@ _IDRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=69,
-  serialized_end=97,
+  serialized_start=68,
+  serialized_end=96,
 )
 
 DESCRIPTOR.message_types_by_name['IdRequest'] = _IDREQUEST
@@ -113,8 +113,8 @@ _HELPER = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=99,
-  serialized_end=187,
+  serialized_start=98,
+  serialized_end=190,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetDistributeId',

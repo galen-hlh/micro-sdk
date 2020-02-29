@@ -4,13 +4,13 @@ package MicroProto.Helper;
 //option php_namespace = "MicroProto\\Helper";
 
 service Helper {
-  rpc GetDistributeId(IdRequest) returns (IdResponse);
+    rpc GetDistributeId (stream IdRequest) returns (stream IdResponse);
 }
 
 message IdRequest {
-  int32 code = 1;
+    int32 num = 1;
 }
 
 message IdResponse {
-  int64 result = 1;
+    int64 result = 1;
 }

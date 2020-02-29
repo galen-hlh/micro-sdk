@@ -25,7 +25,7 @@ var _ = math.Inf
 const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 
 type IdRequest struct {
-	Code                 int32    `protobuf:"varint,1,opt,name=code,proto3" json:"code,omitempty"`
+	Num                  int32    `protobuf:"varint,1,opt,name=num,proto3" json:"num,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
@@ -56,9 +56,9 @@ func (m *IdRequest) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_IdRequest proto.InternalMessageInfo
 
-func (m *IdRequest) GetCode() int32 {
+func (m *IdRequest) GetNum() int32 {
 	if m != nil {
-		return m.Code
+		return m.Num
 	}
 	return 0
 }
@@ -110,17 +110,17 @@ func init() {
 func init() { proto.RegisterFile("helper/helper.proto", fileDescriptor_9b0c20fee0eeba0e) }
 
 var fileDescriptor_9b0c20fee0eeba0e = []byte{
-	// 157 bytes of a gzipped FileDescriptorProto
+	// 160 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0xce, 0x48, 0xcd, 0x29,
 	0x48, 0x2d, 0xd2, 0x87, 0x50, 0x7a, 0x05, 0x45, 0xf9, 0x25, 0xf9, 0x42, 0x82, 0xbe, 0x99, 0xc9,
-	0x45, 0xf9, 0x01, 0x20, 0xb6, 0x9e, 0x07, 0x58, 0x42, 0x49, 0x9e, 0x8b, 0xd3, 0x33, 0x25, 0x28,
-	0xb5, 0xb0, 0x34, 0xb5, 0xb8, 0x44, 0x48, 0x88, 0x8b, 0x25, 0x39, 0x3f, 0x25, 0x55, 0x82, 0x51,
-	0x81, 0x51, 0x83, 0x35, 0x08, 0xcc, 0x56, 0x52, 0xe1, 0xe2, 0x02, 0x29, 0x28, 0x2e, 0xc8, 0xcf,
-	0x2b, 0x4e, 0x15, 0x12, 0xe3, 0x62, 0x2b, 0x4a, 0x2d, 0x2e, 0xcd, 0x29, 0x01, 0xab, 0x61, 0x0e,
-	0x82, 0xf2, 0x8c, 0x22, 0xb8, 0xd8, 0x20, 0x06, 0x0a, 0xf9, 0x71, 0xf1, 0xbb, 0xa7, 0x96, 0xb8,
-	0x64, 0x16, 0x97, 0x14, 0x65, 0x26, 0x95, 0x96, 0xa4, 0x7a, 0xa6, 0x08, 0xc9, 0xe8, 0x61, 0xd8,
-	0xab, 0x07, 0xb7, 0x54, 0x4a, 0x16, 0x87, 0x2c, 0xc4, 0xc6, 0x24, 0x36, 0xb0, 0xd3, 0x8d, 0x01,
-	0x01, 0x00, 0x00, 0xff, 0xff, 0x8e, 0x9f, 0x18, 0xeb, 0xd1, 0x00, 0x00, 0x00,
+	0x45, 0xf9, 0x01, 0x20, 0xb6, 0x9e, 0x07, 0x58, 0x42, 0x49, 0x96, 0x8b, 0xd3, 0x33, 0x25, 0x28,
+	0xb5, 0xb0, 0x34, 0xb5, 0xb8, 0x44, 0x48, 0x80, 0x8b, 0x39, 0xaf, 0x34, 0x57, 0x82, 0x51, 0x81,
+	0x51, 0x83, 0x35, 0x08, 0xc4, 0x54, 0x52, 0xe1, 0xe2, 0x02, 0x49, 0x17, 0x17, 0xe4, 0xe7, 0x15,
+	0xa7, 0x0a, 0x89, 0x71, 0xb1, 0x15, 0xa5, 0x16, 0x97, 0xe6, 0x94, 0x80, 0x95, 0x30, 0x07, 0x41,
+	0x79, 0x46, 0x31, 0x5c, 0x6c, 0x10, 0xe3, 0x84, 0x82, 0xb8, 0xf8, 0xdd, 0x53, 0x4b, 0x5c, 0x32,
+	0x8b, 0x4b, 0x8a, 0x32, 0x93, 0x4a, 0x4b, 0x52, 0x3d, 0x53, 0x84, 0x64, 0xf4, 0x30, 0x6c, 0xd5,
+	0x83, 0x5b, 0x29, 0x25, 0x8b, 0x43, 0x16, 0x62, 0xa3, 0x06, 0xa3, 0x01, 0x63, 0x12, 0x1b, 0xd8,
+	0xf1, 0xc6, 0x80, 0x00, 0x00, 0x00, 0xff, 0xff, 0xc2, 0x26, 0x9b, 0x0e, 0xd3, 0x00, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -135,7 +135,7 @@ const _ = grpc.SupportPackageIsVersion4
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type HelperClient interface {
-	GetDistributeId(ctx context.Context, in *IdRequest, opts ...grpc.CallOption) (*IdResponse, error)
+	GetDistributeId(ctx context.Context, opts ...grpc.CallOption) (Helper_GetDistributeIdClient, error)
 }
 
 type helperClient struct {
@@ -146,59 +146,91 @@ func NewHelperClient(cc *grpc.ClientConn) HelperClient {
 	return &helperClient{cc}
 }
 
-func (c *helperClient) GetDistributeId(ctx context.Context, in *IdRequest, opts ...grpc.CallOption) (*IdResponse, error) {
-	out := new(IdResponse)
-	err := c.cc.Invoke(ctx, "/MicroProto.Helper.Helper/GetDistributeId", in, out, opts...)
+func (c *helperClient) GetDistributeId(ctx context.Context, opts ...grpc.CallOption) (Helper_GetDistributeIdClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_Helper_serviceDesc.Streams[0], "/MicroProto.Helper.Helper/GetDistributeId", opts...)
 	if err != nil {
 		return nil, err
 	}
-	return out, nil
+	x := &helperGetDistributeIdClient{stream}
+	return x, nil
+}
+
+type Helper_GetDistributeIdClient interface {
+	Send(*IdRequest) error
+	Recv() (*IdResponse, error)
+	grpc.ClientStream
+}
+
+type helperGetDistributeIdClient struct {
+	grpc.ClientStream
+}
+
+func (x *helperGetDistributeIdClient) Send(m *IdRequest) error {
+	return x.ClientStream.SendMsg(m)
+}
+
+func (x *helperGetDistributeIdClient) Recv() (*IdResponse, error) {
+	m := new(IdResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
 }
 
 // HelperServer is the server API for Helper service.
 type HelperServer interface {
-	GetDistributeId(context.Context, *IdRequest) (*IdResponse, error)
+	GetDistributeId(Helper_GetDistributeIdServer) error
 }
 
 // UnimplementedHelperServer can be embedded to have forward compatible implementations.
 type UnimplementedHelperServer struct {
 }
 
-func (*UnimplementedHelperServer) GetDistributeId(ctx context.Context, req *IdRequest) (*IdResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetDistributeId not implemented")
+func (*UnimplementedHelperServer) GetDistributeId(srv Helper_GetDistributeIdServer) error {
+	return status.Errorf(codes.Unimplemented, "method GetDistributeId not implemented")
 }
 
 func RegisterHelperServer(s *grpc.Server, srv HelperServer) {
 	s.RegisterService(&_Helper_serviceDesc, srv)
 }
 
-func _Helper_GetDistributeId_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(IdRequest)
-	if err := dec(in); err != nil {
+func _Helper_GetDistributeId_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(HelperServer).GetDistributeId(&helperGetDistributeIdServer{stream})
+}
+
+type Helper_GetDistributeIdServer interface {
+	Send(*IdResponse) error
+	Recv() (*IdRequest, error)
+	grpc.ServerStream
+}
+
+type helperGetDistributeIdServer struct {
+	grpc.ServerStream
+}
+
+func (x *helperGetDistributeIdServer) Send(m *IdResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func (x *helperGetDistributeIdServer) Recv() (*IdRequest, error) {
+	m := new(IdRequest)
+	if err := x.ServerStream.RecvMsg(m); err != nil {
 		return nil, err
 	}
-	if interceptor == nil {
-		return srv.(HelperServer).GetDistributeId(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/MicroProto.Helper.Helper/GetDistributeId",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(HelperServer).GetDistributeId(ctx, req.(*IdRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	return m, nil
 }
 
 var _Helper_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "MicroProto.Helper.Helper",
 	HandlerType: (*HelperServer)(nil),
-	Methods: []grpc.MethodDesc{
+	Methods:     []grpc.MethodDesc{},
+	Streams: []grpc.StreamDesc{
 		{
-			MethodName: "GetDistributeId",
-			Handler:    _Helper_GetDistributeId_Handler,
+			StreamName:    "GetDistributeId",
+			Handler:       _Helper_GetDistributeId_Handler,
+			ServerStreams: true,
+			ClientStreams: true,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
 	Metadata: "helper/helper.proto",
 }
