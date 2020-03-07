@@ -1,11 +1,11 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace MicroProto\Helper;
+namespace MicroProto\Image;
 
 /**
  */
-class HelperClient extends \Grpc\BaseStub {
+class ImageClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -20,9 +20,9 @@ class HelperClient extends \Grpc\BaseStub {
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function GetDistributeId($metadata = [], $options = []) {
-        return $this->_bidiRequest('/helper.Helper/GetDistributeId',
-        ['\MicroProto\Helper\IdResponse','decode'],
+    public function UploadFile($metadata = [], $options = []) {
+        return $this->_bidiRequest('/image.Image/UploadFile',
+        ['\MicroProto\Image\UploadFileResponse','decode'],
         $metadata, $options);
     }
 

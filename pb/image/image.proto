@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package image;
+option php_namespace = "MicroProto\\Image";
+
+
+service Image {
+    rpc UploadFile (stream UploadFileRequest) returns (stream UploadFileResponse);
+}
+
+message UploadFileRequest {
+    bytes file = 1;
+    string fileName = 2;
+    uint32 fileType = 3;
+}
+
+message UploadFileResponse {
+    uint32 code = 1;
+    string filePath = 2;
+}
+

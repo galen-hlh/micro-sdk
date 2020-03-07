@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package idProduce;
+option php_namespace = "MicroProto\\IdProduce";
+
+service Helper {
+    rpc GetDistributeId (stream IdProduceRequest) returns (stream IdProduceResponse);
+}
+
+message IdProduceRequest {
+    uint32 len = 1;
+}
+
+message IdProduceResponse {
+    uint32 code = 1;
+    repeated uint64 ids = 2;
+}
