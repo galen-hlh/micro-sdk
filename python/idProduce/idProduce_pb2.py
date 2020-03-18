@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='idProduce',
   syntax='proto3',
   serialized_options=_b('\312\002\024MicroProto\\IdProduce'),
-  serialized_pb=_b('\n\x19idProduce/idProduce.proto\x12\tidProduce\"\x1f\n\x10IdProduceRequest\x12\x0b\n\x03len\x18\x01 \x01(\r\".\n\x11IdProduceResponse\x12\x0c\n\x04\x63ode\x18\x01 \x01(\r\x12\x0b\n\x03ids\x18\x02 \x03(\x04\x32Z\n\x06Helper\x12P\n\x0fGetDistributeId\x12\x1b.idProduce.IdProduceRequest\x1a\x1c.idProduce.IdProduceResponse(\x01\x30\x01\x42\x17\xca\x02\x14MicroProto\\IdProduceb\x06proto3')
+  serialized_pb=_b('\n\x19idProduce/idProduce.proto\x12\tidProduce\"\x1f\n\x10IdProduceRequest\x12\x0b\n\x03len\x18\x01 \x01(\r\".\n\x11IdProduceResponse\x12\x0c\n\x04\x63ode\x18\x01 \x01(\r\x12\x0b\n\x03ids\x18\x02 \x03(\x04\x32]\n\tIdProduce\x12P\n\x0fGetDistributeId\x12\x1b.idProduce.IdProduceRequest\x1a\x1c.idProduce.IdProduceResponse(\x01\x30\x01\x42\x17\xca\x02\x14MicroProto\\IdProduceb\x06proto3')
 )
 
 
@@ -115,18 +115,18 @@ _sym_db.RegisterMessage(IdProduceResponse)
 
 DESCRIPTOR._options = None
 
-_HELPER = _descriptor.ServiceDescriptor(
-  name='Helper',
-  full_name='idProduce.Helper',
+_IDPRODUCE = _descriptor.ServiceDescriptor(
+  name='IdProduce',
+  full_name='idProduce.IdProduce',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
   serialized_start=121,
-  serialized_end=211,
+  serialized_end=214,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetDistributeId',
-    full_name='idProduce.Helper.GetDistributeId',
+    full_name='idProduce.IdProduce.GetDistributeId',
     index=0,
     containing_service=None,
     input_type=_IDPRODUCEREQUEST,
@@ -134,8 +134,8 @@ _HELPER = _descriptor.ServiceDescriptor(
     serialized_options=None,
   ),
 ])
-_sym_db.RegisterServiceDescriptor(_HELPER)
+_sym_db.RegisterServiceDescriptor(_IDPRODUCE)
 
-DESCRIPTOR.services_by_name['Helper'] = _HELPER
+DESCRIPTOR.services_by_name['IdProduce'] = _IDPRODUCE
 
 # @@protoc_insertion_point(module_scope)

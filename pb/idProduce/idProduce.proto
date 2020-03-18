@@ -3,7 +3,7 @@ syntax = "proto3";
 package idProduce;
 option php_namespace = "MicroProto\\IdProduce";
 
-service Helper {
+service IdProduce {
     rpc GetDistributeId (stream IdProduceRequest) returns (stream IdProduceResponse);
 }
 

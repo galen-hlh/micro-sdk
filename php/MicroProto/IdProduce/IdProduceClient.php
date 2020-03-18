@@ -5,7 +5,7 @@ namespace MicroProto\IdProduce;
 
 /**
  */
-class HelperClient extends \Grpc\BaseStub {
+class IdProduceClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -21,7 +21,7 @@ class HelperClient extends \Grpc\BaseStub {
      * @param array $options call options
      */
     public function GetDistributeId($metadata = [], $options = []) {
-        return $this->_bidiRequest('/idProduce.Helper/GetDistributeId',
+        return $this->_bidiRequest('/idProduce.IdProduce/GetDistributeId',
         ['\MicroProto\IdProduce\IdProduceResponse','decode'],
         $metadata, $options);
     }
